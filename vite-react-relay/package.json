@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run dev",
     "dev": "concurrently \"npm run wundergraph\" \"npm run relay\" \"vite --port 3000\"",
     "build": "npm run build:wundergraph && relay-compiler && tsc && vite build",
     "preview": "vite preview",
